@@ -11,6 +11,6 @@ class Dishes(models.Model):
 
 
     def __str__(self):
-        return f'{self.name}, время приготовления {self.cooktime} минут'
+        return f'{self.name}, время приготовления {self.cooktime} мин'
 
 

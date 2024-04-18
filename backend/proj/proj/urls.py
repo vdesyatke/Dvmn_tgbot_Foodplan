@@ -17,10 +17,13 @@ Including another URLconf
 # from words import views
 from django.contrib import admin
 from django.urls import path
+from dishes import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('random/', views.RandomDish.as_view()),
+    path('another/<int:pk>', views.AnotherRandomDish.as_view()),
     # path('random/', views.RandomWord.as_view()),
     # path('next/<int:pk>', views.NextWord.as_view()),
 ]
