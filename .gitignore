@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 .idea/
 backend/proj/words
+tg_bot/src/local_settings.py
